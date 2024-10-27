@@ -23,5 +23,7 @@ docx2txt
 pymupdf
 nltk
 pydantic
+pinecone
 pytesseract
+tiktoken
 unstructured[all-docs]
