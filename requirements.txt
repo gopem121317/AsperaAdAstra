@@ -1,12 +1,14 @@
 openai
 langchain
+langchainhub
 streamlit
 faiss-cpu
+lxml
 pypdf
-langchain_community
 numpy
 pandas
 matplotlib
+langchain_community
 langchain-chroma
 langchain-experimental
 python-dotenv
@@ -16,5 +18,10 @@ PyYAML==6.0.1
 sentence-transformers==2.2.2
 pdfplumber
 reportlab
+python-docx
+docx2txt
 pymupdf
 nltk
+pydantic
+pytesseract
+unstructured[all-docs]
