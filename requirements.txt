@@ -7,6 +7,7 @@ langchain_community
 numpy
 pandas
 matplotlib
+langchain-chroma
 langchain-experimental
 python-dotenv
 python-magic
