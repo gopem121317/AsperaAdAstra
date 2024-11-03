@@ -1,6 +1,9 @@
 # AsperaAdAstra
 AAA repo for GenAI Hackathon 2
 
+## Install Python packages listed in requirements.txt
+
+pip install -r /path/to/requirements.txt
 
 ## Additional Software Requirements
 

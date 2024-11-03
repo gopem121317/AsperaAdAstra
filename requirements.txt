@@ -1,6 +1,12 @@
 openai
 langchain
+langchain-openai
 langchainhub
+langchain-community
+langchain-chroma
+langchain-experimental
+langchain-unstructured
+langgraph
 streamlit
 faiss-cpu
 lxml
@@ -8,9 +14,6 @@ pypdf
 numpy
 pandas
 matplotlib
-langchain_community
-langchain-chroma
-langchain-experimental
 python-dotenv
 python-magic
 plotly
@@ -23,7 +26,9 @@ docx2txt
 pymupdf
 nltk
 pydantic
+chromadb
 pinecone
 pytesseract
 tiktoken
 unstructured[all-docs]
+beautifulsoup4
