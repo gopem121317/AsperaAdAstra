@@ -36,3 +36,4 @@ mammoth
 pandoc
 openpyxl
 Spire.Doc
+spacy
