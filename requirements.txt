@@ -32,3 +32,7 @@ pytesseract
 tiktoken
 unstructured[all-docs]
 beautifulsoup4
+mammoth
+pandoc
+openpyxl
+Spire.Doc
