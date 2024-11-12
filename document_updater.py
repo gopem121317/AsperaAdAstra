@@ -233,7 +233,7 @@ class DocumentUpdater:
                               table_string=table_string)
         response = self.retrieval_qa_old_doc({"query": query})
 
-        for doc in response.source_documents:
+        for doc in response["source_documents"]:
             if doc.metadata["category"] == "Table":
                 return doc
 
@@ -242,7 +242,7 @@ class DocumentUpdater:
         query = prompt.format(image_description=image_description)
         response = self.retrieval_qa_old_doc({"query": query})
 
-        for doc in response.source_documents:
+        for doc in response["source_documents"]:
             if doc.metadata["category"] == "Image":
                 return doc
 
@@ -309,8 +309,8 @@ class DocumentUpdater:
 
 
 def prepare_test_case_data(data_dir):
-    docs = load_docx_unstructured(Path(data_dir, "Time_Series_Model_Development_Report_old.docx"))
-    img_loader = UnstructuredImageLoader(Path(data_dir, "bizA_revenue_ts_old.jpeg"))
+    docs = load_docx_unstructured(Path(data_dir, "Time_Series_Model_Development_Report_old.docx").as_posix())
+    img_loader = UnstructuredImageLoader(Path(data_dir, "bizA_revenue_ts_old.jpeg").as_posix())
     img_data = img_loader.load()
     docs += img_data
     for doc in docs:

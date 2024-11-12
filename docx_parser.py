@@ -47,7 +47,5 @@ def docx_to_html(docx_file_path, html_file_path):
 
 
 if __name__ == "__main__":
-    # docx_fpath_test = ".\\docs\\fake_hedge_fund_letter.docx"
-    docx_fpath_test = ".\\docs\\Time_Series_Model_Development_Report_old.docx"
-    # extract_text_and_tables_from_docx(docx_fpath_test)
+    docx_fpath_test = ".\\synthetic_data\\Time_Series_Model_Development_Report_old.docx"
     load_docx_unstructured(docx_fpath_test)
