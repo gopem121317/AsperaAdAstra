@@ -138,6 +138,19 @@ with tab1:
             summary = process_uploaded_files(uploaded_files)
         st.caption('Summary')
         st.write_stream(summary)
+        if st.button('Generate updated document', type='primary'):
+            with st.spinner('Generating document...'):
+                updated_doc, changes = None  # TODO: update doc
+            if changes:
+                with st.expander('Show changes'):
+                    col1, col2 = st.columns(2)
+                    for change in changes:
+                        pass
+                    st.write(changes)  # TODO: beautify, maybe in a table
+            if updated_doc:
+                st.download_button('Download updated document', updated_doc)
+            else:
+                st.write('Something went wrong')
 
 with tab2:
     st.header('Refine document')
