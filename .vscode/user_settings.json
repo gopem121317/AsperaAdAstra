@@ -1,0 +1,13 @@
+{
+    // Help Jupyter find common source roots by adding them to `sys.path`.
+    "jupyter.runStartupCommands": [
+        "import os, sys",
+        "sys.path.insert(0, \"${workspaceFolder}\")",
+    ],
+    // Theme.
+    "workbench.colorTheme": "Bearded Theme Milkshake Blueberry",
+    "workbench.iconTheme": "bearded-icons",
+    // Other.
+    "explorer.autoReveal": false,
+    "editor.minimap.enabled": false,
+}
