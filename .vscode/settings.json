@@ -1,0 +1,14 @@
+{
+    // Default python interpreter.
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    // Add source root to python path for both terminal and integrated terminals.
+    "python.envFile": "${workspaceFolder}/.vscode/.env",
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "${workspaceFolder}"
+    },
+    // Formatting options.
+    "files.trimTrailingWhitespace": true,
+    // Editor options.
+    "editor.wordWrapColumn": 100,
+    "editor.wordWrap": "bounded",
+}
